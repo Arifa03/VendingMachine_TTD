@@ -7,7 +7,7 @@ using VendingMachine;
 
 namespace VendingMachine_TTD
 {
-    class VendingMachine_BL : IAcceptCoin, ISelectProduct, IDespenceProduct
+    public class VendingMachine_BL : IAcceptCoin, ISelectProduct, IDespenceProduct
     {
         public double Total_Amount = 0.0;
         double _enteredCoin = 0.0;
@@ -39,7 +39,7 @@ namespace VendingMachine_TTD
         }
         public VendingMachine_BL()
         {
-            Total_Amount= this._enteredCoin;
+            Total_Amount = this._enteredCoin;
         }
 
         #region CheckCoinMethod
